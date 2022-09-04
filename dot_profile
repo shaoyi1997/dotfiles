@@ -1,0 +1,19 @@
+. "$HOME/.cargo/env"
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+# eval "$(pyenv init --path)"
+
+alias cp="cp -i"                          # confirm before overwriting something
+alias df='df -h'                          # human-readable sizes
+alias free='free -m'                      # show sizes in MB
+alias np='nano -w PKGBUILD'
+alias more=less
+alias gca='git commit --amend --no-edit'
+
+alias activate='source env/bin/activate'
+alias la="ls -la"
+alias cdw="cd /windows/Users/Shaoyi/Documents/"
+alias restartplasmashell="killall plasmashell && kstart5 plasmashell"
+alias ga="git add ."
+alias pamacupdateaur="pamac update -a"
+alias restartlpss="echo 'Removing module' && sudo modprobe -r intel_lpss_pci && echo 'Restarting module' && sudo modprobe intel_lpss_pci" 
